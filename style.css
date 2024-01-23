@@ -1,0 +1,200 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #50c878;
+}
+h1 {
+  text-align: center;
+  font-family: "Monaco", monospace;
+  font-size: 48px;
+  vertical-align: text-top;
+  padding-top: 85px;
+  color: white;
+}
+#startbuttons{
+  text-align: center;
+}
+.play{
+  font-size: 28px;
+  background-color: #50c878;
+  border-radius: 8px;
+  border-color: white;
+  color: white;
+  border-width: 3px;
+  font-family: "Monaco", monospace;
+}
+.play:hover{
+  background-color: #FFBF00;
+  color: white;
+  transition-duration: 0.3s;
+}
+#instructions{
+  font-size: 28px;
+  background-color: #50c878;
+  border-radius: 8px;
+  border-color: white;
+  color: white;
+  border-width: 3px;
+  font-family: "Monaco", monospace;
+}
+#instructions:hover{
+  background-color: #FFBF00;
+  color: white;
+  transition-duration: 0.3s;
+}
+#options{
+  font-size: 28px;
+  background-color: #50c878;
+  border-radius: 8px;
+  border-color: white;
+  color: white;
+  border-width: 3px;
+  font-family: "Monaco", monospace;
+}
+#options:hover{
+  background-color: #FFBF00;
+  color: white;
+  transition-duration: 0.3s;
+}
+
+#container{
+  width: 290px;
+  height: 310px;
+  text-align: center;
+  justify-content: center;
+  transform: translate(185%, -10%);  
+}
+.box{
+  width: 50px;
+  height: 50px;
+  border: 4px solid grey;
+  background-color: lightgrey;
+  text-align: center;
+  border-radius: 8px;
+  justify-content: center;
+}
+#row1player1{
+  width: 290px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  font-family: "Monaco", monospace;
+  justify-content: center;
+}
+#row2player1{
+  width: 290px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Monaco", monospace;
+}
+#row3player1{
+  width: 290px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  font-family: "Monaco", monospace;
+}
+#row4player1{
+  width: 290px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  font-family: "Monaco", monospace;
+}
+#row5player1{
+  width: 290px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  font-family: "Monaco", monospace;  
+}
+
+[contenteditable]{
+  text-transform: uppercase;
+  font-size: 30px;
+  justify-content: center;
+}
+
+#myLetterpopup{
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: "Monaco", monospace;
+}
+#myWordpopup{
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: "Monaco", monospace;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.apply-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+.popupcontainer{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  border-radius: 5px;
+  display: flex;
+}
+.popup{
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.popup h3{
+  color: black;
+  font-size: 30px;
+  font-family: "Monaco", monospace;
+}
+.popup img{
+  border-radius: 50%;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+}
+.popup p{
+  padding: 0 30px 30px;
+  font-family: "Monaco", monospace;
+  font-size: 20px;
+}
+.popup button{
+  border-radius: 35px;
+  background-color: #50c878;
+  color: white;
+  font-family: "Monaco", monospace;
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+.popup button:hover{
+  background-color: #FFBF00;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
